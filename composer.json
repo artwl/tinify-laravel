@@ -1,13 +1,13 @@
 {
-  "name": "yasmuru/ys-tinify-laravel",
+  "name": "artwl/tinify-laravel",
   "type": "library",
   "description": "Tinify API support with laravel",
   "keywords": ["tinify","tinypng", "laravel"],
   "license": "MIT",
   "authors": [
     {
-      "name": "yasmuru",
-      "email": "yasmuru@gmail.com"
+      "name": "artwl",
+      "email": ""
     }
   ],
   "require": {
@@ -17,8 +17,18 @@
   },
   "autoload": {
     "psr-4": {
-      "yasmuru\\LaravelTinify\\": "src"
+      "Artwl\\LaravelTinify\\": "src"
     }
   },
+  "extra": {
+        "laravel": {
+            "providers": [
+                "Artwl\\LaravelTinify\\LaravelTinifyServiceProvider"
+            ],
+            "aliases": {
+                "Tinify": "Artwl\\LaravelTinify\\Facades\\Tinify"
+            }
+        }
+    },
   "minimum-stability": "stable"
 }
