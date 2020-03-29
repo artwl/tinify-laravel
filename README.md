@@ -38,7 +38,7 @@ $result = Tinify::fromFile('\path\to\file');
 $result -> toFile('\path\to\save');
 ```
 
-### Resizing
+### Resizing And Compressing
 ```php
 use Tinify;
 
