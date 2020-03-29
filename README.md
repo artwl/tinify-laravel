@@ -28,16 +28,7 @@ And set a env variable `TINIFY_APIKEY` in `.env` file with your tinypng api key.
 ## Examples
 
 ```php
-	$result = Tinify::fromFile('\path\to\file');
+$result = Tinify::fromFile('\path\to\file');
 
-
-	$result = Tinify::fromBuffer($source_data);
-
-	$result = Tinify::fromUrl($image_url);
-
-	/** To save as File **/
-	$result->toFile('\path\to\save');
-
-	/** To get image as data **/
-	$data = $result->toBuffer();
+$result->toFile('\path\to\save');
 ```
