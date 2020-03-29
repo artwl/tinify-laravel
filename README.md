@@ -7,6 +7,8 @@ Tinify API support with laravel
 $ composer require artwl/tinify-laravel
 ```
 
+## Add Provider And Alias(Optional, Only need if laravel < 5.5)
+
 Add this to your config/app.php,
 
 under "providers":
@@ -20,7 +22,7 @@ under "aliases":
 ```
 
 
-And set a env variable `TINIFY_APIKEY` with your tinypng api key.
+And set a env variable `TINIFY_APIKEY` in `.env` file with your tinypng api key.
 
 ## Examples
 
