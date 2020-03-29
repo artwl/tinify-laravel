@@ -1,6 +1,8 @@
 # Tinify-laravel
 Tinify API support with laravel
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/artwl/tinify-laravel.svg?style=flat-square)](https://packagist.org/packages/artwl/tinify-laravel)
+
 ## Install
 
 ``` bash
