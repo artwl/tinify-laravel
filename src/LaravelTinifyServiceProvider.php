@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-namespace yasmuru\LaravelTinify;
+namespace Artwl\LaravelTinify;
 
 use Illuminate\Support\ServiceProvider;
 use Tinify\Tinify;
@@ -19,7 +19,7 @@ class LaravelTinifyServiceProvider extends ServiceProvider {
 	* @return void
 	*/
 	public function boot()
-	{	
+	{
 		$configPath = __DIR__ . '/../config/tinify.php';
         $this->publishes([$configPath => config_path('tinify.php')], 'config');
 	}
@@ -33,7 +33,7 @@ class LaravelTinifyServiceProvider extends ServiceProvider {
 	{
 		$configPath = __DIR__ . '/../config/tinify.php';
         $this->mergeConfigFrom($configPath, 'tinify');
-		$this->app->bind('tinify', 'yasmuru\LaravelTinify\Services\TinifyService');
+		$this->app->bind('tinify', 'Artwl\LaravelTinify\Services\TinifyService');
 
 	}
 
