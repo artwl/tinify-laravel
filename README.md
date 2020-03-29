@@ -29,9 +29,25 @@ Set a env variable `TINIFY_APIKEY` in `.env` file with your tinypng api key.
 
 ## Examples
 
+### Compressing
+
 ```php
 use Tinify;
 
 $result = Tinify::fromFile('\path\to\file');
-$result->toFile('\path\to\save');
+$result -> toFile('\path\to\save');
 ```
+
+### Resizing
+```php
+use Tinify;
+
+$result = Tinify::fromFile('\path\to\file');
+$result -> resize(array(
+    "method" => "fit",
+    "width" => 150,
+    "height" => 100
+));
+$result -> toFile('\path\to\save');
+```
+
